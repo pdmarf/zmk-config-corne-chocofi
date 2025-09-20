@@ -16,10 +16,10 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <230>;
+            tapping-term-ms = <200>;
             flavor = "tap-preferred";
             require-prior-idle-ms = <125>;
-            quick-tap-ms = <230>;
+            quick-tap-ms = <200>;
         };
 
         shifthr: shifthr {
@@ -28,9 +28,9 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <230>;
+            tapping-term-ms = <185>;
             flavor = "tap-preferred";
-            quick-tap-ms = <230>;
+            quick-tap-ms = <185>;
         };
 
         weak: weak {
@@ -86,6 +86,12 @@
             label = "SAVE";
         };
 
+        email: email {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp J &kp O &kp S &kp H &kp AT &kp J &kp O &kp S &kp H &kp B &kp L &kp A &kp I &kp S &kp DOT &kp C &kp O &kp M>;
+            label = "EMAIL";
+        };
     };
 
     keymap {
