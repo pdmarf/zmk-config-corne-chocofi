@@ -16,10 +16,10 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <230>;
             flavor = "tap-preferred";
             require-prior-idle-ms = <125>;
-            quick-tap-ms = <200>;
+            quick-tap-ms = <230>;
         };
 
         shifthr: shifthr {
