@@ -105,10 +105,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q              &kp W             &kp F                    &kp P                  &kp B        &kp J      &kp L              &kp U             &kp Y              &kp APOS             &none
-&none  &weak LEFT_META A  &weak LEFT_ALT R  &shifthr LEFT_CONTROL S  &shifthr LEFT_SHIFT T  &kp G        &kp M      &shifthr RSHIFT N  &shifthr RCTRL E  &weak RIGHT_ALT I  &weak RIGHT_META O   &none
-&none  &kp Z              &kp X             &kp C                    &kp D                  &kp V        &kp K      &kp H              &kp COMMA         &kp DOT            &hm SEMICOLON SLASH  &none
-                                            &weak LEFT_CONTROL TAB   &lt 1 BACKSPACE        &lt 2 ESC    &lt 2 RET  &lt 1 SPACE        &save
+&none  &kp Q              &kp W             &kp F                     &kp P                  &kp B        &kp J      &kp L              &kp U             &kp Y              &kp APOS             &none
+&none  &weak LEFT_META A  &weak LEFT_ALT R  &shifthr LEFT_CONTROL S   &shifthr LEFT_SHIFT T  &kp G        &kp M      &shifthr RSHIFT N  &shifthr RCTRL E  &weak RIGHT_ALT I  &weak RIGHT_META O   &none
+&none  &kp Z              &kp X             &kp C                     &kp D                  &kp V        &kp K      &kp H              &kp COMMA         &kp DOT            &hm SEMICOLON SLASH  &none
+                                            &weak LEFT_CONTROL QMARK  &lt 1 BACKSPACE        &lt 2 ESC    &lt 2 RET  &lt 1 SPACE        &save
             >;
 
             label = "home";
@@ -125,7 +125,7 @@
 &none  &kp EXCL            &kp AT               &kp LEFT_BRACE              &kp RIGHT_BRACE                   &kp PIPE     &kp PLUS   &kp NUMBER_7  &kp N8        &kp N9                    &kp ASTERISK   &none
 &none  &hm LEFT_META HASH  &hm LEFT_ALT DOLLAR  &hm LCTRL LEFT_PARENTHESIS  &hm LEFT_SHIFT RIGHT_PARENTHESIS  &kp GRAVE    &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6              &kp COLON      &none
 &none  &kp PERCENT         &kp CARET            &kp LEFT_BRACKET            &kp RIGHT_BRACKET                 &kp TILDE    &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &shifthr PERIOD NUMBER_3  &kp BACKSLASH  &none
-                                                &none                       &kp LC(BACKSPACE)                 &kp DEL      &kp RET    &kp SPACE     &kp N0
+                                                &kp QUESTION                &kp LC(BACKSPACE)                 &kp DEL      &kp RET    &kp SPACE     &kp N0
             >;
 
             label = "num";
