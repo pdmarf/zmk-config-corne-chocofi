@@ -125,7 +125,7 @@
 &none  &kp EXCL            &kp AT               &kp LEFT_BRACE              &kp RIGHT_BRACE                   &hm PIPE DOUBLE_QUOTES    &kp PLUS   &kp NUMBER_7  &kp N8        &kp N9                    &kp ASTERISK         &none
 &none  &hm LEFT_META HASH  &hm LEFT_ALT DOLLAR  &hm LCTRL LEFT_PARENTHESIS  &hm LEFT_SHIFT RIGHT_PARENTHESIS  &kp GRAVE                 &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6              &hm AMPERSAND COLON  &none
 &none  &kp PERCENT         &kp CARET            &kp LEFT_BRACKET            &kp RIGHT_BRACKET                 &kp TILDE                 &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &shifthr PERIOD NUMBER_3  &kp BACKSLASH        &none
-                                                &kp QUESTION                &mt LC(SPACE) LC(BACKSPACE)       &kp DEL                   &kp RET    &kp SPACE     &kp N0
+                                                &kp QUESTION                &mt LC(SPACE) TAB                 &kp DEL                   &kp RET    &kp SPACE     &kp N0
             >;
 
             label = "num";
@@ -133,7 +133,7 @@
 
         nav {
             bindings = <
-&trans  &kp F1            &kp F2           &kp F3        &kp F4             &email             &kp LS(K_PREVIOUS)  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LS(K_NEXT)  &kp K_PLAY_PAUSE  &trans
+&trans  &kp F1            &kp F2           &kp F3        &kp F4             &caps_word         &kp LS(K_PREVIOUS)  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LS(K_NEXT)  &kp K_PLAY_PAUSE  &trans
 &trans  &hm LEFT_META F5  &hm LEFT_ALT F6  &hm LCTRL F7  &hm LEFT_SHIFT F8  &hm LG(V) LG(C)    &kp LEFT_ARROW      &kp DOWN           &kp UP_ARROW     &kp RIGHT       &none             &trans
 &trans  &kp F9            &kp F10          &kp F11       &kp F12            &kp PSCRN          &kp LA(H)           &kp LA(TAB)        &none            &kp LA(L)       &none             &trans
                                            &bt BT_CLR    &bt BT_NXT         &trans             &trans              &trans             &trans
