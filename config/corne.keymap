@@ -51,6 +51,14 @@
             #binding-cells = <0>;
             bindings = <&kp BACKSPACE>, <&kp LC(BACKSPACE)>;
         };
+         numlock_hold: numlock_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NUMLOCK_HOLD";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;         // adjust for how long you want to hold
+            flavor = "tap-preferred";        // taps always send space
+            bindings = <&kp SPACE>, <&tog 1>; // tap = Space, hold = toggle layer 1
+        };
     };
 
     combos {
@@ -105,14 +113,7 @@
 
             label = "pwd-vm";
         };
-        numlock_hold: numlock_hold {
-            compatible = "zmk,behavior-hold-tap";
-            label = "NUMLOCK_HOLD";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;         // adjust for how long you want to hold
-            flavor = "tap-preferred";        // taps always send space
-            bindings = <&kp SPACE>, <&tog 1>; // tap = Space, hold = toggle layer 1
-        };
+       
 
     };
     
