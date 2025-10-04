@@ -101,7 +101,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp G &kp U &kp G &kp G &kp E &kp N &kp H &kp E &kp N1 &kp M>;
+                <&kp LS(G) &kp U &kp G &kp G &kp E &kp N &kp H &kp E &kp N1 &kp M>;
 
             label = "pwd-vm";
         };
