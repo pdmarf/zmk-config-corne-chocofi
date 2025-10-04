@@ -86,7 +86,7 @@
             label = "SAVE";
         };
 
-        password: pwd-1 {
+        password1: pwd-1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap
@@ -101,7 +101,7 @@
                         &kp N5>;
             label = "pwd";
         };
-        password: pwd-vm {
+        password2: pwd-vm {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap
