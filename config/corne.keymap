@@ -89,9 +89,18 @@
         password: pwd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp c &kp h &kp 1 &kp c &kp k &kp p &kp e &kp a &kp 5 &kp>;
+            bindings = <&macro_tap
+                        &kp C
+                        &kp H
+                        &kp N1
+                        &kp C
+                        &kp K
+                        &kp P
+                        &kp E
+                        &kp A
+                        &kp N5>;
             label = "pwd";
-        };
+};
     };
 
     keymap {
