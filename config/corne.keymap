@@ -89,7 +89,7 @@
         password: pwd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp c &kp 1 &kp c &kp k &kp p &kp e &kp a &kp 5 &kp >;
+            bindings = <&none &kp c &kp h &kp 1 &kp c &kp k &kp p &kp e &kp a &kp 5 &kp >;
             label = "pwd";
         };
     };
