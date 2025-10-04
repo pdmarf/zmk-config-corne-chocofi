@@ -105,13 +105,13 @@
 
             label = "pwd-vm";
         };
-        tognum: tognum {
+        numlock_hold: numlock_hold {
             compatible = "zmk,behavior-hold-tap";
-            label = "TOGNUM";
+            label = "NUMLOCK_HOLD";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;      // how long before it counts as a hold
-            flavor = "tap-preferred";     // quick taps always send Space
-            bindings = <&kp SPACE>, <&tog 1>; // tap = space, hold = toggle layer 1
+            tapping-term-ms = <200>;         // adjust for how long you want to hold
+            flavor = "tap-preferred";        // taps always send space
+            bindings = <&kp SPACE>, <&tog 1>; // tap = Space, hold = toggle layer 1
         };
 
     };
