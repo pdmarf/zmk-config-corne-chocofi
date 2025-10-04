@@ -105,8 +105,17 @@
 
             label = "pwd-vm";
         };
-    };
+        tognum: tognum {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TOGNUM";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;      // how long before it counts as a hold
+            flavor = "tap-preferred";     // quick taps always send Space
+            bindings = <&kp SPACE>, <&tog 1>; // tap = space, hold = toggle layer 1
+        };
 
+    };
+    
     keymap {
         compatible = "zmk,keymap";
 
