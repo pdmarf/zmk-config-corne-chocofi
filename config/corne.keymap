@@ -51,14 +51,6 @@
             #binding-cells = <0>;
             bindings = <&kp BACKSPACE>, <&kp LC(BACKSPACE)>;
         };
-         numlock_hold: numlock_hold {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-            bindings = <&kp SPACE &tog 1>; // tap = space, hold = toggle layer 1
-        };
-
     };
 
     combos {
@@ -113,10 +105,8 @@
 
             label = "pwd-vm";
         };
-       
-
     };
-    
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -131,7 +121,7 @@
 &none  &kp Q              &kp W             &kp F                    &kp P                  &kp B          &kp J      &kp L              &kp U             &kp Y              &kp APOS             &none
 &none  &weak LEFT_META A  &weak LEFT_ALT R  &shifthr LEFT_CONTROL S  &shifthr LEFT_SHIFT T  &kp G          &kp M      &shifthr RSHIFT N  &shifthr RCTRL E  &weak RIGHT_ALT I  &weak RIGHT_META O   &none
 &none  &kp Z              &kp X             &kp C                    &kp D                  &kp V          &kp K      &kp H              &kp COMMA         &kp DOT            &hm SEMICOLON SLASH  &none
-                                            &weak TAB QMARK          &lt 1 BACKSPACE        &lt 2 ENTER    &lt 2 ESC  &numlock_hold      &save
+                                            &weak TAB QMARK          &lt 1 BACKSPACE        &lt 2 ENTER    &lt 2 ESC  &lt 1 SPACE        &save
             >;
 
             label = "home";
