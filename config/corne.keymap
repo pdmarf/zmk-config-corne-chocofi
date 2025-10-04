@@ -89,32 +89,20 @@
         password1: pwd-1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap
-                        &kp C
-                        &kp H
-                        &kp N1
-                        &kp C
-                        &kp K
-                        &kp P
-                        &kp E
-                        &kp A
-                        &kp N5>;
+            bindings =
+                <&macro_tap>,
+                <&kp C &kp H &kp N1 &kp C &kp K &kp P &kp E &kp A &kp N5>;
+
             label = "pwd";
         };
+
         password2: pwd-vm {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap
-                        &kp G
-                        &kp U
-                        &kp G
-                        &kp G
-                        &kp E
-                        &kp N
-                        &kp H
-                        &kp E
-                        &kp N1
-                        &kp M>;
+            bindings =
+                <&macro_tap>,
+                <&kp G &kp U &kp G &kp G &kp E &kp N &kp H &kp E &kp N1 &kp M>;
+
             label = "pwd-vm";
         };
     };
@@ -158,9 +146,9 @@
 
         nav {
             bindings = <
-&trans  &kp F1            &kp F2           &kp F3        &kp F4             &caps_word         &kp LS(K_PREVIOUS)  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LS(K_NEXT)  &kp K_PLAY_PAUSE  &trans
+&trans  &kp F1            &kp F2           &kp F3        &kp F4             &password1         &kp LS(K_PREVIOUS)  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LS(K_NEXT)  &kp K_PLAY_PAUSE  &trans
 &trans  &hm LEFT_META F5  &hm LEFT_ALT F6  &hm LCTRL F7  &hm LEFT_SHIFT F8  &hm LG(V) LG(C)    &kp LEFT_ARROW      &kp DOWN           &kp UP_ARROW     &kp RIGHT       &none             &trans
-&trans  &kp F9            &kp F10          &kp F11       &kp F12            &password          &kp LA(H)           &kp LA(TAB)        &none            &kp LA(L)       &none             &trans
+&trans  &kp F9            &kp F10          &kp F11       &kp F12            &password2         &kp LA(H)           &kp LA(TAB)        &none            &kp LA(L)       &none             &trans
                                            &bt BT_CLR    &bt BT_NXT         &trans             &trans              &trans             &trans
             >;
 
