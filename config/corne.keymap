@@ -91,7 +91,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp C &kp H &kp N1 &kp C &kp K &kp P &kp E &kp A &kp N5>;
+                <&kp C &kp H &kp N1 &kp C &kp K &kp P &kp E &kp A &kp N5 &kp ENTER>;
 
             label = "pwd";
         };
@@ -101,7 +101,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp LS(G) &kp U &kp G &kp G &kp E &kp N &kp H &kp E &kp N1 &kp M>;
+                <&kp LS(G) &kp U &kp G &kp G &kp E &kp N &kp H &kp E &kp N1 &kp M &kp ENTER>;
 
             label = "pwd-vm";
         };
